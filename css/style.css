@@ -241,8 +241,9 @@ footer {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
- .endereco {
-  
+.endereco iframe {
+  width: 300px;
+  height: 200px;
 }
 
  .facebook {
