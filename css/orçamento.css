@@ -61,3 +61,13 @@ button {
 button:hover {
     background-color: #1e7e34;
 }
+
+.img_sevicos{
+    
+position: absolute;
+top:500px;
+left: 100px;
+height: 200px;
+
+
+}
