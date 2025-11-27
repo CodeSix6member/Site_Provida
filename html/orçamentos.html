@@ -68,17 +68,32 @@
                             placeholder="Ex: Necessita de 3 sessões de fisioterapia por semana em casa."></textarea>
                     </div>
                     <div class="loader">
-                        <button class="btn-enviar" id="botaoEnviar" action="mailto:providahomecare2022@gmail.com"
-                            method="get" type="submit">
-                            <span class="text">Enviar Cadastro</span>
-                        </button>
+                       <button type="button" id="btnEnviar" class="btn btn-success btn-lg btn-block">
+                            <span class="text">Enviar Cadastro</span>  
+                         </button>
+                          
+                        
                     </div>
                 </form>
             </div>
         </div>
     </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 1. Seleciona o botão pelo ID
+        const btnEnviar = document.getElementById('btnEnviar');
 
-
+        if (btnEnviar) {
+            btnEnviar.addEventListener('click', function(event) { 
+                event.preventDefault();  
+            alert(' Cadastro enviado com sucesso! Agradecemos o seu contato. Entraremos em contato em breve');
+         
+            });
+        } else {
+            console.error('Botão "btnEnviar" nã encontrado. Verifique o ID no HTML.');
+        }
+    });
+</script>
 </body>
 
 </html>

@@ -116,19 +116,7 @@
   <a href="https://wa.me/5551985442025" class="whatsapp-btn" target="_blank" title="whatsapp" rel="noopener">
     <i class="fa fa-whatsapp"></i>
   </a>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const menuHamburguer = document.getElementById('menu-hamburguer');
-      const navList = document.getElementById('nav-list');
-
-      if (menuHamburguer && navList) {
-        menuHamburguer.addEventListener('click', () => {
-          navList.classList.toggle('active');
-          menuHamburguer.classList.toggle('open');
-        });
-      }
-    });
-  </script>
+  
   <!-- _______________________________________RODAPÉ__________________________________________ -->
   <footer id="contato">
     <div class="footer-wrapper">
@@ -165,7 +153,22 @@
       </section>
   </footer>
 
+ <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuHamburguer = document.getElementById('menu-hamburguer');
+      const navList = document.getElementById('nav-list');
 
+      if (menuHamburguer && navList) {
+        menuHamburguer.addEventListener('click', () => {
+          // Alterna a classe 'active' que faz o menu aparecer/desaparecer
+          navList.classList.toggle('active');
+
+          // Opcional: Animar o ícone (hambúrguer para 'X')
+          menuHamburguer.classList.toggle('open');
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

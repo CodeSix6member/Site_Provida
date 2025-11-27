@@ -6,20 +6,18 @@
     })
 
 
-  document.addEventListener('DOMContentLoaded', () => {
-    // ID do botão
-    const menuHamburguer = document.getElementById('menu-hamburguer');
-    // ID da lista de navegação
-    const navList = document.getElementById('nav-list');
+   document.addEventListener('DOMContentLoaded', () => {
+      const menuHamburguer = document.getElementById('menu-hamburguer');
+      const navList = document.getElementById('nav-list');
 
-    // Verifica se os elementos foram encontrados antes de adicionar o listener
-    if (menuHamburguer && navList) {
+      if (menuHamburguer && navList) {
         menuHamburguer.addEventListener('click', () => {
-            // Esta linha alterna a classe 'active'
-            navList.classList.toggle('active');
+          // Alterna a classe 'active' que faz o menu aparecer/desaparecer
+          navList.classList.toggle('active');
+
+          // Opcional: Animar o ícone (hambúrguer para 'X')
+          menuHamburguer.classList.toggle('open');
         });
-    } else {
-        console.error("Erro: Elementos do menu não encontrados. Verifique os IDs.");
-    }
-});
+      }
+    });
     
