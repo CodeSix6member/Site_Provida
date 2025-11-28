@@ -34,8 +34,7 @@
         <div class="right-panel">
             <div class="container form-wrapper">
                 <h2>Solicitar Orçamento de Serviços de Home Care</h2>
-
-                <form action="providahomecare2022@gmail.com" method="get">
+                <form method="POST" action="https://api.staticforms.xyz/submit">
                     <div class="form-group">
                         <label for="nome_cliente">Nome do Cliente:</label>
                         <input type="text" id="nome_cliente" name="nome_cliente" required>
@@ -43,7 +42,7 @@
 
                     <div class="form-group">
                         <label for="E-mail">E-mail:</label>
-                        <input type="text" id="Email_do_cliente" name="email_cliente" required>
+                        <input type="text" id="email_do_cliente" name="email" required>
                     </div>
 
                     <div class="form-group">
@@ -64,11 +63,12 @@
 
                     <div class="form-group">
                         <label for="servico">Serviço Solicitado (Descreva a necessidade):</label>
-                        <textarea id="servico" name="servico_solicitado" rows="3" required
+                        <textarea id="servico" name="servico" rows="3" required
                             placeholder="Ex: Necessita de 3 sessões de fisioterapia por semana em casa."></textarea>
                     </div>
                     <div class="loader">
-                       <button type="button" id="btnEnviar" class="btn btn-success btn-lg btn-block">
+                        <input type="hidden" name="apiKey" value="sf_31lmdmf3ambm33gjndl8l9jk">
+                       <button type="submit" id="btnEnviar" value="Enviar" class="btn btn-success btn-lg btn-block">
                             <span class="text">Enviar Cadastro</span>  
                          </button>
                           
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-<script>
+   <script>
     document.addEventListener('DOMContentLoaded', function() {
         // 1. Seleciona o botão pelo ID
         const btnEnviar = document.getElementById('btnEnviar');
