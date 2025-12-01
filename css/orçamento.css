@@ -75,126 +75,98 @@ button:hover {
 }
 
 .img_sevicos {
-    /* REMOVA AS PROPRIEDADES DE position: absolute! */
     width: 100%;
     max-width: 300px;
-    /* Limita o tamanho da imagem dos profissionais */
     height: auto;
     border-radius: 8px;
     display: block;
     margin: 20px auto 0 auto;
-    /* Centraliza a imagem e adiciona uma margem superior */
 }
 
 /* ---------------------------------
   LAYOUT PRINCIPAL (2 COLUNAS)
 ------------------------------------ */
+
 .main-content {
     display: flex;
-    /* Habilita o layout flexível (lado a lado) */
     max-width: 1200px;
-    /* Largura máxima do conteúdo */
     margin: 40px auto;
-    /* Centraliza o conteúdo e adiciona margem superior/inferior */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    /* Sombra sutil no contêiner todo */
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    /* Garante que o conteúdo interno não vaze */
 }
 
 .left-panel {
-    /* Painel da Esquerda: Logo, Textos e Imagem */
     width: 40%;
     padding: 20px;
     background-color: #f7f7f7;
-    /* Cor de fundo leve para a lateral */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centraliza o conteúdo horizontalmente */
     padding-top: 50px;
-    /* Espaço no topo para posicionamento da logo */
 }
 
 .right-panel {
-    /* Painel da Direita: Formulário */
     width: 60%;
     padding: 30px;
     box-sizing: border-box;
-    /* Garante que o padding não aumente a largura */
 }
 
 /* ---------------------------------
   ESTILIZAÇÃO DA ESQUERDA
 ------------------------------------ */
 
-/* 1. FAZER A LOGO SUBIR */
 .logo-container {
     width: 100%;
     text-align: center;
-    /* Ajuste para mover a logo para cima */
     margin-top: -60px;
-    /* Use valores negativos para 'puxar' a logo para cima */
     margin-bottom: 20px;
-    /* Adiciona espaço abaixo da logo */
 }
 
 .main-logo {
     width: 250px;
-    /* Largura ajustada da logo */
     height: auto;
 }
 
-/* 2. ESTILIZAR OS TEXTOS */
 .info-block {
     text-align: left;
     width: 100%;
     padding: 0 20px;
-
-    /* ESSAS PROPRIEDADES GARANTEM A ORDEM VERTICAL */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .titulo-consultas {
-    /* Estilo para 'Consultas e Avaliações' */
     color: #4CAF50;
-    /* Verde da Pro Vida */
-    font-size: 1.6em;
     font-weight: bold;
     margin-bottom: 10px;
     padding-bottom: 5px;
     border-bottom: 2px solid #4CAF50;
-    /* Linha de destaque */
     display: inline-block;
 }
 
 .explica-consultas {
-    /* Estilo para o parágrafo explicativo */
     color: #555;
     font-size: 1.1em;
     line-height: 1.5;
     margin-bottom: 30px;
 }
 
-/* 3. ESTILIZAÇÃO DA IMAGEM */
 .img_sevicos {
     width: 100%;
     max-width: 300px;
-    /* Limita o tamanho da imagem dos profissionais */
     height: auto;
     border-radius: 8px;
     display: block;
     margin: 0 auto;
-    /* Centraliza a imagem */
 }
 
 /* ---------------------------------
   ESTILIZAÇÃO DO FORMULÁRIO (DIREITA)
 ------------------------------------ */
+
 .right-panel h2 {
     color: #007bff;
     ;
@@ -203,7 +175,6 @@ button:hover {
     font-size: 2em;
 }
 
-/* Aqui você continua com seus estilos de form-group, label, input, textarea, e button */
 .form-group label {
     display: block;
     margin-bottom: 5px;
@@ -218,18 +189,17 @@ button:hover {
 @media (max-width: 768px) {
     
     .main-content {
-        flex-direction: column;   /* Empilha esquerda e direita */
+        flex-direction: column;
         width: 95%;
         margin: 20px auto;
     }
 
     .left-panel, 
     .right-panel {
-        width: 100%;              /* Painéis ocupam a largura toda */
+        width: 100%;
         padding: 20px;
     }
 
-    /* Centralizar tudo no painel esquerdo */
     .left-panel {
         align-items: center;
         text-align: center;
@@ -237,11 +207,11 @@ button:hover {
     }
 
     .logo-container {
-        margin-top: 0;            /* Remove o deslocamento para cima */
+        margin-top: 0;
     }
 
     .main-logo {
-        width: 180px;             /* Reduz a logo no mobile */
+        width: 180px;
     }
 
     .info-block {
@@ -261,7 +231,7 @@ button:hover {
     }
 
     .img_sevicos {
-        max-width: 220px;         /* Imagem menor no mobile */
+        max-width: 220px;
         margin-top: 10px;
     }
 
@@ -287,6 +257,7 @@ button:hover {
 }
 
 /* RESPONSIVIDADE EXTRA (telas muito pequenas) */
+
 @media (max-width: 480px) {
 
     .main-logo {
