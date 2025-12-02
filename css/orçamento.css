@@ -194,9 +194,13 @@ button:hover {
         margin: 20px auto;
     }
 
-    .left-panel, 
+      .left-panel {
+        width: 90%;
+        padding: 20px;
+    }
+
     .right-panel {
-        width: 100%;
+        width: 80%;
         padding: 20px;
     }
 
