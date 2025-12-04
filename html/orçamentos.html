@@ -35,46 +35,43 @@
             <div class="container form-wrapper">
                 <h2>Solicitar Orçamento de Serviços de Home Care</h2>
                 <form action="https://api.staticforms.dev/submit" method="POST">
-                    <div class="form-group">
-                        <label for="nome_cliente">Nome do Cliente:</label>
-                        <input type="text" id="nome_cliente" name="nome_cliente" required>
-                    </div>
+    <input type="hidden" name="accessKey" value="sf_31lmdmf3ambm33gjndl8l9jk">
+    <input type="hidden" name="subject" value="Novo cadastro enviado pelo site">
 
-                    <div class="form-group">
-                        <label for="E-mail">E-mail:</label>
-                        <input type="text" id="email_do_cliente" name="email" required>
-                    </div>
+    <div class="form-group">
+        <label for="nome_cliente">Nome do Cliente:</label>
+        <input type="text" id="nome_cliente" name="nome_cliente" required>
+    </div>
 
-                    <div class="form-group">
-                        <label for="nome_paciente">Nome do Paciente:</label>
-                        <input type="text" id="nome_paciente" name="nome_paciente" required>
-                    </div>
+    <div class="form-group">
+        <label for="email_do_cliente">E-mail:</label>
+        <input type="email" id="email_do_cliente" name="email" required>
+    </div>
 
-                    <div class="form-group">
-                        <label for="endereco">Endereço Completo:</label>
-                        <textarea id="endereco" name="endereco" rows="3" required></textarea>
-                    </div>
+    <div class="form-group">
+        <label for="nome_paciente">Nome do Paciente:</label>
+        <input type="text" id="nome_paciente" name="nome_paciente" required>
+    </div>
 
-                    <div class="form-group">
-                        <label for="patologia">Patologia do Paciente (Descrição Detalhada):</label>
-                        <textarea id="patologia" name="patologia" rows="4" required
-                            placeholder="Ex: Hipertensão Arterial Sistêmica, histórico de AVC isquêmico em 2023, restrito ao leito."></textarea>
-                    </div>
+    <div class="form-group">
+        <label for="endereco">Endereço Completo:</label>
+        <textarea id="endereco" name="endereco" rows="3" required></textarea>
+    </div>
 
-                    <div class="form-group">
-                        <label for="servico">Serviço Solicitado (Descreva a necessidade):</label>
-                        <textarea id="servico" name="servico" rows="3" required
-                            placeholder="Ex: Necessita de 3 sessões de fisioterapia por semana em casa."></textarea>
-                    </div>
-                    <div class="loader">
-                        <input type="hidden" name="apiKey" value="sf_31lmdmf3ambm33gjndl8l9jk">
-                       <button type="submit" id="btnEnviar" class="btn btn-success btn-lg btn-block">
-                            <span class="text">Enviar Cadastro</span>  
-                         </button>
-                          
-                        
-                    </div>
-                </form>
+    <div class="form-group">
+        <label for="patologia">Patologia do Paciente:</label>
+        <textarea id="patologia" name="patologia" rows="4" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="servico">Serviço Solicitado:</label>
+        <textarea id="servico" name="servico" rows="3" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success btn-lg btn-block">
+        Enviar Cadastro
+    </button>
+</form>
             </div>
         </div>
     </div>
